@@ -37,7 +37,7 @@ jobs:
         uses: cicirello/jacoco-badge-generator@v2.9.0
         with:
           jacoco-csv-file: build/reports/jacoco/test/jacocoTestReport.csv
-
+          fail-if-branches-less-than: 100
           fail-on-coverage-decrease: true
           fail-on-branches-decrease: true
 
@@ -46,6 +46,12 @@ jobs:
           coverage-label: 'Coverage'
           branches-label: 'Branches'
 
+      - name: Commit updated badges
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "Update coverage badges"
+          add: '.github/badges/*.svg'
+          default_author: github_actions
 
   build_and_publish_docker_image:
     name: Publish to Docker Hub
