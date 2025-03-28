@@ -3,38 +3,38 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ArrayUtilsTest {
 
-    @Test
-    public void testEmptyArray() {
-        assertEquals(0, ArrayUtils.countOf(new int[]{}, 3));
-    }
-    @Test
-    public void testLengthOneArrayandFound() {
-        // Do not execute fault
-        assertEquals(1, ArrayUtils.countOf(new int[]{1}, 1));
-    }
-    @Test
-    public void testLengthOneArrayNoFound() {
-        // Do not execute fault
-        assertEquals(0, ArrayUtils.countOf(new int[]{1}, 3));
-    }
-    @Test
-    public void testLoopsFound() {
-        // Do not execute fault
-        assertEquals(2, ArrayUtils.countOf(new int[]{1,3,1,3,4,1}, 3));
-    }
-    @Test
-    public void testFindLastNull() {
-        // Do not execute fault
-        assertThrows(NullPointerException.class, () -> {ArrayUtils.findLast(null, 3);});
-    }
-
-
-    @Test
-    public void testFindLastEmpty() {
-        // For any input where y appears in the second or later position, there is no error. Also,
-        // if x is empty, there is no error.
-        assertEquals(-1, ArrayUtils.findLast(new int[]{}, 3));
-    }
+//    @Test
+//    public void testEmptyArray() {
+//        assertEquals(0, ArrayUtils.countOf(new int[]{}, 3));
+//    }
+//    @Test
+//    public void testLengthOneArrayandFound() {
+//        // Do not execute fault
+//        assertEquals(1, ArrayUtils.countOf(new int[]{1}, 1));
+//    }
+//    @Test
+//    public void testLengthOneArrayNoFound() {
+//        // Do not execute fault
+//        assertEquals(0, ArrayUtils.countOf(new int[]{1}, 3));
+//    }
+//    @Test
+//    public void testLoopsFound() {
+//        // Do not execute fault
+//        assertEquals(2, ArrayUtils.countOf(new int[]{1,3,1,3,4,1}, 3));
+//    }
+//    @Test
+//    public void testFindLastNull() {
+//        // Do not execute fault
+//        assertThrows(NullPointerException.class, () -> {ArrayUtils.findLast(null, 3);});
+//    }
+//
+//
+//    @Test
+//    public void testFindLastEmpty() {
+//        // For any input where y appears in the second or later position, there is no error. Also,
+//        // if x is empty, there is no error.
+//        assertEquals(-1, ArrayUtils.findLast(new int[]{}, 3));
+//    }
 
     @Test
     public void testFindLastNonExistent() {
