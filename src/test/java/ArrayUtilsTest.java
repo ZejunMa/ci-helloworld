@@ -2,6 +2,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ArrayUtilsTest {
+
     @Test
     public void testEmptyArray() {
         assertEquals(0, ArrayUtils.countOf(new int[]{}, 3));
