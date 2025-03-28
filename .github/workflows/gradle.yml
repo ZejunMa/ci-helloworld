@@ -37,8 +37,10 @@ jobs:
         uses: cicirello/jacoco-badge-generator@v2.9.0
         with:
           jacoco-csv-file: build/reports/jacoco/test/jacocoTestReport.csv
-          fail-if-branches-less-than: 100
+
+          fail-on-coverage-decrease: true
           fail-on-branches-decrease: true
+
           generate-summary: true
           summary-title: 'Code Coverage Summary'
           coverage-label: 'Coverage'

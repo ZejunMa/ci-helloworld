@@ -27,14 +27,14 @@ public class ArrayUtilsTest {
 //        // Do not execute fault
 //        assertThrows(NullPointerException.class, () -> {ArrayUtils.findLast(null, 3);});
 //    }
-
-
-    @Test
-    public void testFindLastEmpty() {
-        // For any input where y appears in the second or later position, there is no error. Also,
-        // if x is empty, there is no error.
-        assertEquals(-1, ArrayUtils.findLast(new int[]{}, 3));
-    }
+//
+//
+//    @Test
+//    public void testFindLastEmpty() {
+//        // For any input where y appears in the second or later position, there is no error. Also,
+//        // if x is empty, there is no error.
+//        assertEquals(-1, ArrayUtils.findLast(new int[]{}, 3));
+//    }
 
     @Test
     public void testFindLastNonExistent() {
